@@ -24,78 +24,174 @@
       href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800"
     />
 
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
+     <!-- Font Awesome Css -->
+     <link rel="stylesheet" href="./css/font-awesome.min.css" />
+     <link rel="stylesheet" href="./css/main.css" />
+     <link rel="stylesheet" href="./css/contact.css" />
   </head>
   <body>
     <!-- Navigation -->
     <header>
-      <div>
-        <a href="#" aria-label="Ephraim Debel Logo">
-          <h1><span>E</span>phraim<span>D</span>ebel</h1>
-        </a>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+      <div class="slide-menu">
+        <div class="logo">
+          <a class="logo" href="#"><span>E</span>phraim<span>D</span>ebel</a>
+        </div>
+        <button class="hamburger" id="hamburger-btn">
+          ☰
+        </button>
+        <nav class="menu-list" id="menu">
+          <ul class="menu-links list-unstyled">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- Contact Section -->
-    <main>
+    <main class="contact" id="contact">
       <div id="contact">
-        <header>
+        <div class="main-container">
+        <header class="main-title">
           <h2>
             Contact Me <span><i class="fa fa-headphones"></i></span>
           </h2>
         </header>
-        <div>
-          <article>
-            <h3>Location</h3>
-            <p>Addis Ababa, Ethiopia</p>
-          </article>
-          <article>
-            <h3>Email</h3>
-            <p>Ephraimdebel@gmail.com</p>
-          </article>
-          <article>
-            <h3>Phone</h3>
-            <p>+251 985 377 844</p>
-            <p>+251 713 377 845</p>
-          </article>
+        <div class="contact-container">
+          <div class="">
+            <div class="media">
+              <div class="column-small-4">
+                <div class="contact-box one">
+                  <div class="title-box">
+                    <div class="icon-box">
+                      <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="name-box">
+                      <h4>Location</h4>
+                    </div>
+                  </div>
+                  <div class="content-box">
+                    <p>Addis Ababa, Ethiopia</p>
+                    <p>Addis Ababa</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column-small-4">
+                <div class="contact-box two">
+                  <div class="title-box">
+                    <div class="icon-box">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="name-box">
+                      <h4>Email</h4>
+                    </div>
+                  </div>
+                  <div class="content-box">
+                    <p>Ephraimdebel@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column-small-4">
+                <div class="contact-box three">
+                  <div class="title-box">
+                    <div class="icon-box">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="name-box">
+                      <h4>Phone</h4>
+                    </div>
+                  </div>
+                  <div class="content-box">
+                    <p>+251 985 377 844</p>
+                    <p>+251 713 377 845</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column-medium-10 column-medium-offset-1">
+            <form class="contact-form" action="#" method="post">
+              <div class="row forms">
+                <div class="column-small-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                      value=""
+                      onkeyup="this.setAttribute('value', this.value);"
+                    />
+                    <label for="name">Name</label>
+                    <span class="input-border"></span>
+                  </div>
+                </div>
+                <div class="column-small-12">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      value=""
+                      onkeyup="this.setAttribute('value', this.value);"
+                    />
+                    <label for="email">Email</label>
+                    <span class="input-border"></span>
+                  </div>
+                </div>
+                <div class="column-small-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      name="subject"
+                      required
+                      value=""
+                      onkeyup="this.setAttribute('value', this.value);"
+                    />
+                    <label for="subject">Subject</label>
+                    <span class="input-border"></span>
+                  </div>
+                </div>
+                <div class="column-small-12">
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      required
+                      data-value=""
+                      onkeyup="this.setAttribute('data-value', this.value);"
+                    ></textarea>
+                    <label for="message">Your Message</label>
+                    <span class="input-border"></span>
+                  </div>
+                </div>
+              </div>
+              <button class="main-btn" type="submit" name="send">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
-        <div>
-          <form action="#" method="post">
-            <label for="form-name">Name</label>
-            <input type="text" id="form-name" name="name" required />
-
-            <label for="form-email">Email</label>
-            <input type="email" id="form-email" name="email" required />
-
-            <label for="form-subject">Subject</label>
-            <input type="text" id="form-subject" name="subject" required />
-
-            <label for="form-message">Your Message</label>
-            <textarea id="form-message" name="message" required></textarea>
-
-            <button type="submit" name="send">Send Message</button>
-          </form>
-        </div>
+    
       </div>
+    </div>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <p>
-        <strong>Ephraim Debel</strong>
-      </p>
-      <ul>
+    <footer class="footer text-center">
+      <div class="main-container footer-container">
+        <a class="logo" href="#"><span>E</span>phraim<span>D</span>ebel</a>
+  
+      <ul class="footer-social-icons list-unstyled">
         <li>
           <a href="https://x.com/Ephraimdebel" aria-label="Twitter Profile">
             <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -113,5 +209,9 @@
         </li>
       </ul>
     </footer>
+
+
+    <script src="js/header.js"></script>
+
   </body>
 </html>

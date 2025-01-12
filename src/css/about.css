@@ -1,0 +1,97 @@
+/* General Reset for Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for Responsiveness */
+  .main-container {
+    width: 100%;
+    max-width: 1140px; /* Matches Bootstrap's container */
+    margin: 0 auto;
+    padding: 0 15px; /* Padding for responsive layout */
+  }
+  
+  /* Row */
+  .row {
+    display: grid;
+   grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px; 
+    margin: 0 auto;
+  }
+  .main-container{
+    margin:0 auto;
+  }
+  /* Column (Responsive Grid) */
+  .column-med-6,
+  .column-larg-5,
+  .column-larg-7 {
+    flex: 0 0 100%; /* Default to full width for small screens */
+    max-width: 100%;
+  }
+  
+  /* Responsive Image */
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* About Image Styling */
+  .about-image img {
+    width: 100%; /* Ensure it scales with the container */
+    max-width: 300px; /* Default maximum size for small screens */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center alignment */
+  }
+  .about-info{
+padding: 13px; 
+max-width: 660px;
+margin: 0 auto;
+ }
+  
+  /* Medium Devices (≥768px) */
+  @media (min-width: 768px) {
+    .row{
+      max-width: 670pxpx;
+    }
+  
+  
+    .about-image img {
+      max-width:600px; /* Adjust size for medium screens */
+    }
+    .about-info{
+      padding: 5px; 
+       }
+  }
+  
+  /* Large Devices (≥992px) */
+  @media (min-width: 992px) {
+    
+    .row{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  .main-container{
+    max-width: 1300px;
+  }
+    .about-image img {
+      max-width: 500px; /* Adjust size for larger screens */
+    }
+  }
+  
+  /* Small Devices (≤576px) */
+  @media (max-width: 576px) {
+    .column-med-6,
+    .column-larg-5,
+    .column-larg-7 {
+      flex: 0 0 100%; /* Stack columns vertically */
+      max-width: 100%;
+    }
+  
+    .about-image img {
+      max-width: 300px; /* Limit the image size for very small screens */
+    }
+  }
+  

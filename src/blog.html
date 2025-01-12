@@ -13,140 +13,217 @@
     <title>Ephraim's Portfolio</title>
     <link rel="icon" href="./images/newfav.ico" />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800&display=swap"
-      rel="stylesheet"
-    />
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800"
+        />
+    
+        <!-- Font Awesome Css -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/blog.css" />
   </head>
   <body>
     <!-- Navigation -->
     <header>
-      <div>
-        <a href="#" aria-label="Ephraim Debel Logo">
-          <h1><span>E</span>phraim<span>D</span>ebel</h1>
-        </a>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+      <div class="slide-menu">
+        <div class="logo">
+          <a class="logo" href="#"><span>E</span>phraim<span>D</span>ebel</a>
+        </div>
+        <button class="hamburger" id="hamburger-btn">
+          ☰
+        </button>
+        <nav class="menu-list" id="menu">
+          <ul class="menu-links list-unstyled">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- Blog Section -->
-    <section id="blog">
-      <header>
-        <h2>My Blog</h2>
+    <section class="blog blog-top-container" id="blog">
+      <div class="">
+
+      <header class="main-title blog-top">
+        <h2>My Blog<span><i class="fa fa-camera"></i></span></h2>
       </header>
-      <div>
-        <article>
-          <img src="./images/Screenshot1.png" alt="Netflix Clone Project" />
-          <h3>Behind the Scenes of My Netflix Clone</h3>
-          <p>
+      <div class="row">
+        <article class="column-medium post">
+          <div class="post-img">
+          <img src="./images/Screenshot1.png" alt="Netflix Clone Project" class="img-responsive"
+          />
+          </div>
+          <div class="post-content">
+              <h4 class="post-title">Behind the Scenes of My Netflix Clone</h4>
+          <p class="post-text ">
             One of my most exciting projects was building a Netflix homepage clone. I used React
             for the UI and integrated The Movie Database (TMDB) API to fetch real-time movie data.
-            This blog explores how I handled API requests, implemented infinite scrolling, and
-            ensured the design was responsive for all devices.
-          </p>
+            This blog explores how I handled API requests, implemented infinite scrolling
+            </p>
           <a href="#">Read More</a>
+          </div>
         </article>
-        <article>
-          <img src="./images/Screenshot2.png" alt="LeetCode Journey" />
-          <h3>Mastering Coding Interviews: My LeetCode Journey</h3>
-          <p>
+        <article class="column-medium post">
+          <div class="post-img">
+          <img src="./images/Screenshot2.png" alt="LeetCode Journey" class="img-responsive"
+          />
+          </div>
+          <div class="post-content">
+          <h4 class="post-title">Mastering Coding : My LeetCode Journey</h4>
+          <p class="post-text ">
             Over the past five months, I’ve solved over 300 LeetCode problems, earning five badges
             in the process. In this blog, I share how I prioritized problem types, tackled
-            difficult algorithms, and balanced preparation with my university studies. These tips
-            can help anyone preparing for top tech company interviews.
+            difficult algorithms, and balanced preparation with my university studies. 
           </p>
           <a href="#">Read More</a>
+          </div>
         </article>
-        <article>
-          <img src="./images/photo_2024-11-24_20-45-40.jpg" alt="Portfolio Creation" />
-          <h3>Memorable Hiking Experience</h3>
-          <p>
+        <article class="column-medium post">
+          <div class="post-img">
+
+            <img src="./images/photo_2025-01-07_14-18-29.jpg" alt="Portfolio Creation"  class="img-responsive"/>
+          </div>
+          <div class="post-content">
+          <h4 class="post-title">Memorable Hiking Experience</h4>
+          <p class="post-text">
             I had an amazing experience hiking with my friends at Gulele. The breathtaking views,
             fresh air, and the joy of being surrounded by nature made it truly memorable. We shared
             laughter, took plenty of photos, and enjoyed each other's company throughout the hike.
           </p>
           <a href="#">Read More</a>
+          </div>
         </article>
+      </div>
       </div>
     </section>
 
     <!-- Video Section -->
-    <section id="videos">
-      <header>
-        <h2>My Videos</h2>
-      </header>
-      <div>
-        <article>
-          <video controls>
-            <source src="./videos/IMG_1062.mov" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <h3>Gulele Hiking</h3>
-        </article>
-        <article>
-          <video controls>
-            <source src="./videos/video_2024-11-24_20-25-56.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <h3>Football Match with Shepherd Team</h3>
-        </article>
-        <article>
-          <video controls>
-            <source src="./videos/video_2024-11-24_20-48-40.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <h3>Meskel Square Conference</h3>
-        </article>
+    <section class="blog" id="blog">
+      <div class="main-container">
+    
+        <header class="main-title">
+          <h2>Videos<span><i class="fa fa-video-camera"></i></span></h2>
+        </header>
+        <div class="row">
+          <article class="column-medium post">
+            <div class="video-container">
+              <video id="video1" class="post-video" width="100%">
+                <source src="./videos/0107(1).mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div class="custom-video-player">
+              <div class="play-icon" onclick="playVideo('video1')">
+                <i class="fa fa-play" aria-hidden="true"></i>
+              </div>
+              </div>
+              <div class="post-content">
+                <h4 class="post-title">Small Group Birthday Celebration</h4>
+              </div>
+            </div>
+          </article>
+    
+          <article class="column-medium post">
+            <div class="video-container">
+              <video id="video2" class="post-video" width="100%" >
+                <source src="./videos/0107(2).mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div class="custom-video-player">
+
+                <div class="play-icon" onclick="playVideo('video2')">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="post-content">
+                <h4 class="post-title">Meskel Square Conference</h4>
+              </div>
+            </div>
+          </article>
+    
+          <article class="column-medium post">
+            <div class="video-container">
+              <video id="video3" class="post-video" width="100%" >
+                <source src="./videos/shepherds.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div class="custom-video-player">
+              <div class="play-icon" onclick="playVideo('video3')">
+                <i class="fa fa-play" aria-hidden="true"></i>
+              </div>
+            </div>
+              <div class="post-content">
+                <h4 class="post-title">Gulele Hiking with shepherds team</h4>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
+    
 
     <!-- Audio Section -->
-    <section id="audios">
-      <header>
-        <h2>My Favourite Songs</h2>
+    <section class="blog" id="blog" id="audios">
+      <div class="main-container">
+
+      <header class="main-title">
+        <h2>SONGS<span><i class="fa fa-music"></i></span></h2>
       </header>
-      <div>
-        <article>
-          <audio controls>
-            <source src="./audio/AsterAbebeHalelujah.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-          <h3>Aster Abebe</h3>
+    
+      <div class="row">
+        <article class="column-medium post audio-contianer">
+          <div class="custom-audio-player audio-container">
+            <button class="control-button play-pause">▶</button>
+            <input class="volume-slider" id="volume-slider" type="range" min="0" max="1" step="0.1" />
+             <span class="volume-icon"><i class="fa fa-volume-up"></i></span>
+          </div>
+          <audio id="audio-element" src="./audio/AsterAbebeHalelujah.mp3"></audio>
+          <div class="post-content">
+            <h3 class="post-title">Aster Abebe</h3>
+          </div>
         </article>
-        <article>
-          <audio controls>
-            <source src="./audio/01_Lamesginih___ላመስግንህ__Meskerem_Getu(256k).mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-          <h3>Meskerem Getu</h3>
         </article>
-        <article>
-          <audio controls>
-            <source src="./audio/Addisu-Terefe-Kingdom-Sound-Worship-Night-2024-Gena-Bizu-Aya.m4a" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-          <h3>Kingdom Sound</h3>
+        <article class="column-medium post">
+          <div class="custom-audio-player audio-container">
+            <button class="play-pause control-button">▶</button>
+            <input class="volume-slider" id="volume-slider" type="range" min="0" max="1" step="0.1" />
+            <span class="volume-icon"><i class="fa fa-volume-up"></i></span>
+          </div>
+          <audio class="audio-element" src="./audio/01_Lamesginih___ላመስግንህ__Meskerem_Getu(256k).mp3"></audio>
+          <div class="post-content">
+            <h3 class="post-title">Meskerem Getu</h3>
+          </div>
         </article>
+        <article class="column-medium post">
+          <div class="custom-audio-player audio-container">
+            <button class="control-button play-pause">▶</button>
+            <input class="volume-slider" id="volume-slider" type="range" min="0" max="1" step="0.1" />
+            <!-- <span id="current-time">0:00</span> / <span id="duration">0:00</span> -->
+             <span class="volume-icon"><i class="fa fa-volume-up"></i></span>
+          </div>
+          <audio id="audio-element" src="./audio/Addisu-Terefe-Kingdom-Sound-Worship-Night-2024-Gena-Bizu-Aya.m4a"></audio>
+          <div class="post-content">
+            <h3 class="post-title">Kingdom Sound</h3>
+          </div>
+        </article>
+        
       </div>
+    </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-      <p>
-        <strong>Ephraim Debel</strong>
-      </p>
-      <ul>
+    <footer class="footer text-center">
+      <div class="main-container footer-container">
+        <a class="logo" href="#"><span>E</span>phraim<span>D</span>ebel</a>
+  
+      <ul class="footer-social-icons list-unstyled">
         <li>
           <a href="https://x.com/Ephraimdebel" aria-label="Twitter Profile">
             <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -164,5 +241,9 @@
         </li>
       </ul>
     </footer>
+    <script src="js/blog.js"></script>
+
+    <script src="js/header.js"></script>
+
   </body>
 </html>

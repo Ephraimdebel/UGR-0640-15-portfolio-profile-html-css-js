@@ -20,82 +20,235 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800"
     />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+   
+     <!-- Font Awesome Css -->
+     <link rel="stylesheet" href="css/font-awesome.min.css" />
+     <!-- Main Style Css -->
+     <link rel="stylesheet" href="css/main.css" />
+     <link rel="stylesheet" href="css/portfolio.css" />
+
+
   </head>
   <body>
     <!-- Navigation -->
     <header>
-      <div>
-        <a href="#" aria-label="Ephraim Debel Logo">
-          <h1><span>E</span>phraim<span>D</span>ebel</h1>
-        </a>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+      <div class="slide-menu">
+        <div class="logo">
+          <a class="logo" href="#"><span>E</span>phraim<span>D</span>ebel</a>
+        </div>
+        <button class="hamburger" id="hamburger-btn">
+          ☰
+        </button>
+        <nav class="menu-list" id="menu">
+          <ul class="menu-links list-unstyled">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- Portfolio Section -->
-    <main>
-      <section id="portfolio">
+    <main class="page-content">
+      <section class="portfolio" id="portfolio">
+        <div class="main-container">
+          <div class="main-title">
+
         <h2>
-          My Portfolio <i class="fa fa-briefcase" aria-hidden="true"></i>
+          My Portfolio <span><i class="fa fa-briefcase"></i></span>
         </h2>
-        <nav>
-          <ul>
-            <li><button data-filter="all" aria-label="Show All">All</button></li>
-            <li><button data-filter="1" aria-label="React Projects">React</button></li>
-            <li><button data-filter="2" aria-label="Full Stack Projects">Full Stack</button></li>
-            <li><button data-filter="3" aria-label="Bootstrap Projects">Bootstrap</button></li>
+      </div>
+        <nav class="filter-menu">
+          <ul id="control" class="list-filter list-unstyled">
+            <li class="active" data-filter="all">All</li>
+            <li data-filter="1">React</li>
+            <li data-filter="2">Full Stack</li>
+            <li data-filter="3">Bootstrap</li>
           </ul>
         </nav>
-        <div>
-          <article data-category="2">
-            <img src="./images/resizedAmazon.jpg" alt="Amazon Clone Preview" />
-            <h3>Amazon Clone</h3>
-            <a href="https://amazon-clone-p4e5.vercel.app/">Live</a>
-            <a href="https://github.com/Ephraimdebel/Amazon-Clone">GitHub</a>
+        <div class="portfolio-content">
+          <div id="filtr-container" class="row">
+            <article
+            class="column-medium filtr-item"
+            data-category="2"
+            data-sort="value"
+          >
+            <div class="item">
+              <img class="img-responsive" src="./images/resizedAmazon.jpg" alt="" />
+              <div class="overlay">
+                <a
+                  class="icon-img"
+                  href="https://amazon-clone-p4e5.vercel.app/"
+                  ><i class="fa fa-search-plus"></i
+                ></a>
+                <h4 class="item-title">Amazon clone</h4>
+                <div class="item-category">
+                  <span>
+                    <a href="https://amazon-clone-p4e5.vercel.app/"
+                      ><span>Live</span></a
+                    ></span
+                  >
+                  <div class=".git"
+                  ><a href="https://github.com/Ephraimdebel/Amazon-Clone"
+                    ><div>github</div></a
+                  ></div>
+                </div>
+              </div>
+            </div> 
           </article>
-          <article data-category="2">
-            <img src="./images/resizedEvangadi.jpg" alt="Evangadi Forum Preview" />
-            <h3>Evangadi Forum</h3>
-            <a href="https://evangadi-forum-5uls.vercel.app/">Live</a>
-            <a href="https://github.com/Ephraimdebel/EvangadiForum">GitHub</a>
-          </article>
-          <article data-category="1">
-            <img src="./images/resizedNetflix.jpg" alt="Netflix Clone Preview" />
-            <h3>Netflix Clone</h3>
-            <a href="https://ephraimdebel.github.io/Netflix-Clone/">Live</a>
-            <a href="https://github.com/Ephraimdebel/Netflix-Clone">GitHub</a>
-          </article>
-          <article data-category="3">
-            <img src="./images/10001.png" alt="Apple Clone with Bootstrap Preview" />
-            <h3>Apple Clone with Bootstrap</h3>
-            <a href="https://github.com/Ephraimdebel/Responsive-Apple-Website-Replica-Bootstrap/tree/main"
-              >GitHub</a
-            >
-          </article>
-          <article data-category="1">
-            <img src="./images/10002.png" alt="Apple Clone with React Preview" />
-            <h3>Apple Clone with React</h3>
-            <a href="https://github.com/Ephraimdebel/Apple-home-page-React.js-Bootstrap-css">GitHub</a>
-          </article>
+          <article
+          class="column-medium col-sm-6 filtr-item"
+          data-category="2"
+          data-sort="value"
+        >
+          <div class="item">
+            <img
+              class="img-responsive"
+              src="./images/resizedEvangadi.jpg"
+              alt=""
+            />
+            <div class="overlay">
+              <a
+                class="icon-img"
+                href="https://evangadi-forum-5uls.vercel.app/"
+                ><i class="fa fa-search-plus"></i
+              ></a>
+              <h4 class="item-title">Evangadi Forum</h4>
+              <div class="item-category">
+                <span
+                  ><a href="https://evangadi-forum-5uls.vercel.app/"
+                    ><span>Live</span></a
+                  ></span
+
+                >
+                <div class=".git"
+                ><a href="https://github.com/Ephraimdebel/EvangadiForum"
+                  ><div>github</div></a
+                ></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article
+        class="column-medium col-sm-6 filtr-item"
+        data-category="3"
+        data-sort="value"
+      >
+        <div class="item">
+          <img class="img-responsive" src="./images/10001.png" alt="" />
+          <div class="overlay">
+            <a
+              class="icon-img"
+              href="https://via.placeholder.com/600x600"
+              ><i class="fa fa-search-plus"></i
+            ></a>
+            <h4 class="item-title">Apple clone With bootsrtap</h4>
+            <div class="item-category">
+              <!-- <span >Live</span> -->
+              <div class=".git"
+              ><a href="https://github.com/Ephraimdebel/Responsive-Apple-Website-Replica-Bootstrap/tree/main"
+                ><div>github</div></a
+              ></div>
+            </div>
+          </div>
         </div>
+      </article>
+      <article
+      class="column-mediumfiltr-item"
+      data-category="1"
+      data-sort="value"
+    >
+      <div class="item">
+        <img
+          class="img-responsive"
+          src="./images/resizedNetflix.jpg"
+          alt=""
+        />
+        <div class="overlay">
+          <a
+            class="icon-img"
+            href="https://ephraimdebel.github.io/Netflix-Clone/"
+            ><i class="fa fa-search-plus"></i
+          ></a>
+          <h4 class="item-title">Netflix Clone</h4>
+   
+          <div class="item-category">
+            
+            <span
+              ><a href="https://ephraimdebel.github.io/Netflix-Clone/"
+                ><span>Live</span></a
+              ></span>
+            <div class=".git"
+              ><a href="https://github.com/Ephraimdebel/Netflix-Clone"
+                ><div>github</div></a
+              ></div>
+          </div>
+        </div>
+      </div>
+    </article>
+      <article
+      class="column-medium col-sm-6 filtr-item"
+      data-category="3"
+      data-sort="value"
+    >
+      <div class="item">
+        <img class="img-responsive" src="./images/10001.png" alt="" />
+        <div class="overlay">
+          <a
+            class="icon-img"
+            href="https://via.placeholder.com/600x600"
+            ><i class="fa fa-search-plus"></i
+          ></a>
+          <h4 class="item-title">Apple clone With bootsrtap</h4>
+          <div class="item-category">
+            <!-- <span >Live</span> -->
+            <div class=".git"
+            ><a href="https://github.com/Ephraimdebel/Responsive-Apple-Website-Replica-Bootstrap/tree/main"
+              ><div>github</div></a
+            ></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article
+    class="column-medium col-sm-6 filtr-item"
+    data-category="1"
+    data-sort="value"
+  >
+    <div class="item">
+      <img class="img-responsive" src="./images/10002.png" alt="" />
+      <div class="overlay">
+        <a
+          class="icon-img"
+          href="https://via.placeholder.com/600x600"
+          ><i class="fa fa-search-plus"></i
+        ></a>
+        <h4 class="item-title">Apple Clone with React</h4>
+        <div class="item-category">
+          <!-- <span>Live</span> -->
+          <div class=".git"
+          ><a href="https://github.com/Ephraimdebel/Apple-home-page-React.js-Bootstrap-css"
+            ><div>github</div></a
+          ></div>
+        </div>
+      </div>
+    </div>
+  </article>
+        </div>
+      </div>
+      </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <p>
-        <strong>Ephraim Debel</strong>
-      </p>
-      <ul>
+    <footer class="footer text-center">
+      <div class="main-container footer-container">
+        <a class="logo" href="#"><span>E</span>phraim<span>D</span>ebel</a>
+  
+      <ul class="footer-social-icons list-unstyled">
         <li>
           <a href="https://x.com/Ephraimdebel" aria-label="Twitter Profile">
             <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -113,5 +266,10 @@
         </li>
       </ul>
     </footer>
+
+
+
+    <script src="js/header.js"></script>
+
   </body>
 </html>
