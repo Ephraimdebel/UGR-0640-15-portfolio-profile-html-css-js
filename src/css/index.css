@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+@media (min-width: 767.98px) {
+    .row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+}
+@media (min-width: 1024px) {
+    .row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .home .intro h3 {
+        color: #fff;
+        font-size:77px;
+        font-weight: 800;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        line-height: 81px;
+    }
+}
+@media (min-width: 512px) {
+    .display-table-cell h3{
+        font-size: 30px;
+    }
+}

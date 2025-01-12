@@ -15,100 +15,168 @@
 
     <!-- Favicon -->
     <link rel="icon" href="./images/newfav.ico" />
+
+
+    <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800"
+        />
+    
+        <!-- Font Awesome Css -->
+        <link rel="stylesheet" href="./css/font-awesome.min.css" />
+
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/about.css" />
   </head>
   <body>
     <!-- Navigation -->
     <header>
-      <div>
-        <a href="#" aria-label="Ephraim Debel Logo">
-          <h1><span>E</span>phraim<span>D</span>ebel</h1>
-        </a>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+      <div class="slide-menu">
+        <div class="logo">
+          <a class="logo" href="#"><span>E</span>phraim<span>D</span>ebel</a>
+        </div>
+        <button class="hamburger" id="hamburger-btn">
+          ☰
+        </button>
+        <nav class="menu-list" id="menu">
+          <ul class="menu-links list-unstyled">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
+  
 
     <!-- Main Content -->
     <main>
       <!-- About Section -->
-      <section>
-        <div>
-          <header>
-            <h2>About Me</h2>
+      <section class="about-me" id="about">
+        <div class="main-container">
+          <header class="main-title">
+            <h2>About Me<span><i class="fa fa-vcard"></i></h2>
           </header>
-          <div>
-            <figure>
-              <img src="./images/resumeimage.jpg" alt="Ephraim Debel" />
-            </figure>
-            <article>
+          <div class="row">
+            <div class="column-larg-5 column-med-6">
+
+              <figure class="about-image" data-wow-duration="1.7s">
+                <img  class="img-responsive" src="./images/resumeimage.jpg" alt="Ephraim Debel" />
+              </figure>
+            </div>
+            <article class="column-larg-7 column-med-6">
+              <div class="about-info wow fadeInRight" data-wow-duration="1.7s">
+
               <h3>Ephraim Debel</h3>
+              <h4>| Software Engineer & Web Developer</h4>
               <p>
-                I am a software engineering student at Addis Ababa Institute of
-                Technology (AAiT) with a passion for web development. I have
-                completed a full-stack certificate from Evangadi Tech and have
-                experience building dynamic applications using React, Express,
-                MySQL, and Firebase.
+                I am a software engineering student at Addis Ababa Institute
+                of Technology (AAiT), with a strong passion for web
+                development. I have completed a full-stack development
+                certificate from Evangadi Tech, deepening my expertise in
+                building dynamic and scalable web applications. My technical
+                skills span modern technologies like React, MySQL, Express,
+                and Firebase, enabling me to create robust front-end and
+                back-end solutions.
               </p>
               <p>
-                With strong technical and leadership skills, I excel in team
-                environments and aim to contribute innovative solutions to
-                modern software challenges.
+                Throughout my journey, I’ve built several full-stack projects,
+                    utilizing my knowledge to develop seamless user experiences and
+                    efficient database management systems. In addition to my
+                    technical abilities, I possess strong communication and
+                    leadership skills, which have allowed me to collaborate
+                    effectively in team environments and lead projects to successful
+                    completion.
               </p>
-              <a href="./pdf/Ephraims Resume.pdf">Download CV</a>
-              <a href="#contact">Hire Me</a>
+              <p>
+                I am always eager to learn, continuously refining my
+               skills to stay at the forefront of technology, and I look
+               forward to contributing my expertise in impactful ways.
+           </p>
+              <a
+              href="./Ephraimdebel.pdf"
+              class="main-btn btn-download"
+              >Download CV <i class="fa fa-download"></i
+            ></a>
+            <a href="/src/contact.html" class="main-btn">Hire Me</a>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
       <!-- Resume Section -->
-      <section>
-        <div>
-          <header>
-            <h2>My Resume</h2>
+      <section class="resume" id="resume">
+        <div class="main-container ">
+          <header class="main-title">
+            <h2>My Resume<span><i class="fa fa-graduation-cap"></i></span></h2>
           </header>
-          <div>
-            <article>
-              <h3>Education</h3>
-              <section>
-                <h4>Addis Ababa University</h4>
-                <p>Software Engineering (2022 - 2027)</p>
-              </section>
-              <section>
-                <h4>Evangadi Tech</h4>
-                <p>Full-Stack Web Development Certificate (2024)</p>
-              </section>
-            </article>
-            <article>
-              <h3>Experience</h3>
-              <section>
-                <h4>ALX AiCE Course</h4>
-                <p>AI Career Essentials (2024)</p>
-              </section>
-              <section>
-                <h4>Coursera</h4>
-                <p>Python Programming Course (2024)</p>
-              </section>
-            </article>
+          <div class="row">
+            <div class="column-med-6">
+              <div class="education wow fadeInLeft" data-wow-duration="1.7s">
+                <article class="resume-item">
+                  <div class="resume-icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <div class="resume-date">2022 - 2027</div>
+                  <h4>Addis Ababa University</h4>
+                  <span>Software Engineering</span>
+                  <p>
+                    Currently a student at Ethiopia's leading institute of technology, focusing on modern software development practices and systems.
+                  </p>
+                </article>
+                <article class="resume-item">
+                  <div class="resume-icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <div class="resume-date">2024 - 2024(6month)</div>
+                  <h4>Evangadi</h4>
+                  <span>MERN Stack web development certificate</span>
+                  <p>
+                    Completed a comprehensive course in full-stack development, mastering technologies like React, Express, and MySQL.
+                  </p>
+                </article>
+              </div>
+            </div>
+            <div class="column-med-6">
+              <div class="experience wow fadeInRight" data-wow-duration="1.7s">
+                <article class="resume-item">
+                  <div class="resume-icon"><i class="fa fa-suitcase"></i></div>
+                  <div class="resume-date">2-Month</div>
+                  <h4>ALX AiCE Course</h4>
+                  <span>AI career Essential Course Certificate</span>
+                  <p>
+                    Gained knowledge on how to leverage artificial intelligence for societal good, emphasizing ethical AI practices.
+                  </p>
+                </article>
+                <article class="resume-item">
+                  <div class="resume-icon"><i class="fa fa-suitcase"></i></div>
+                  <div class="resume-date">2-Month</div>
+                  <h4>Coursera</h4>
+                  <span>Python Course, </span>
+                  <p>
+                    Acquired strong foundations in Python programming, including practical applications and problem-solving techniques.                  </p>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Skills Section -->
-      <section>
-        <div>
-          <header>
-            <h2>My Skills</h2>
+      <section class="skills">
+        <div class="main-container">
+          <header class="main-title">
+            <h2>My Skills<span><i class="fa fa-gears"></i></span></h2>
           </header>
-          <div>
-            <table>
+          <div class="table-container">
+            <table class="styled-table">
               <tbody>
                 <tr>
                   <td>HTML5</td>
@@ -125,16 +193,17 @@
               </tbody>
             </table>
           </div>
+          
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <p>
-        <strong>Ephraim Debel</strong>
-      </p>
-      <ul>
+    <footer class="footer text-center">
+      <div class="main-container footer-container">
+        <a class="logo" href="#"><span>E</span>phraim<span>D</span>ebel</a>
+  
+      <ul class="footer-social-icons list-unstyled">
         <li>
           <a href="https://x.com/Ephraimdebel" aria-label="Twitter Profile">
             <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -152,5 +221,8 @@
         </li>
       </ul>
     </footer>
+
+    <script src="js/header.js"></script>
+
   </body>
 </html>
